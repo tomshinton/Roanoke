@@ -7,8 +7,27 @@
 
 #include "RoanokePlayerPawn.generated.h"
 
+class UCapsuleComponent;
+class USceneComponent;
+class UPlayerMovementComponent;
+
 UCLASS(Blueprintable)
 class ARoanokePlayerPawn : public APawn
 {
 	GENERATED_BODY()
+
+public:
+
+	ARoanokePlayerPawn(const FObjectInitializer& InObjectInitialiser);
+
+protected:
+
+	UPROPERTY(VisibleDefaultsOnly)
+	USceneComponent* PawnRoot;
+
+	UPROPERTY(VisibleDefaultsOnly)
+	UCapsuleComponent* PawnCollision;
+
+	UPROPERTY(VisibleDefaultsOnly)
+	UPlayerMovementComponent* MovementComponent;
 };
