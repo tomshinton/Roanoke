@@ -18,6 +18,7 @@ public class Roanoke : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] 
 		{
+"Camera",
 			"Movement"
 		});
 	}

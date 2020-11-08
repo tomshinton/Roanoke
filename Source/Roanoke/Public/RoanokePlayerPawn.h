@@ -9,6 +9,7 @@
 
 class UCapsuleComponent;
 class USceneComponent;
+class UPlayerCameraComponent;
 class UPlayerMovementComponent;
 
 UCLASS(Blueprintable)
@@ -30,4 +31,7 @@ protected:
 
 	UPROPERTY(VisibleDefaultsOnly)
 	UPlayerMovementComponent* MovementComponent;
+
+	UPROPERTY(VisibleDefaultsOnly)
+	UPlayerCameraComponent* PlayerCameraComponent;
 };
